@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head>
+<title> [✓] ANNKLIN - Rest APIs [+✓]  </title>
+<meta charset="UTF-8"> 
+<meta name="robots" content="all"> 
+<meta name="robots schedule" content="auto"> 
+<meta name="distribution" content="global"> 
+<meta name="googlebot" content="index,follow">
+<meta property="og:title" content=".:: ANNKLIN ::."/>  
+<meta name="description" content=" [✓] Sem Pressão [+✓] "> 
+<meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTN4cvQG7oDvl-oBpT6AG6g5dS-iqG4XELLg&usqp=CAU">
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTN4cvQG7oDvl-oBpT6AG6g5dS-iqG4XELLg&usqp=CAU" />  
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<table height="100%" width="100%">
+  <td align="center">
+        <div class="time">
+        <span id="jam">00</span> : 
+        <span id="menit">00</span> : 
+        <span id="detik">00</span> &nbsp;
+        <span id="locale">Segundos</span>
+      </div>
+      <div id="sayings">Proverbios</div>
+	  
+      <audio src="audio.mp3" autoplay>
+      <p>Seu navegador não suporta a tag audio </p>
+      </audio>
+	  
+</head>
+
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'> 
+<script type="text/javascript">
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+var isCtrl = false;
+    document.onkeyup=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=false;
+    }
+
+    document.onkeydown=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) && isCtrl == true)
+    {
+    return false;
+    }
+    }
+
+function details() {window.open(""); window.open("");}
+</script>
+<link href="annklin-api.css" rel="stylesheet" type="text/css">
+<center>
+<img class="image" src="https://c.tenor.com/iaq02aYAdWcAAAAC/neon-genesis.gif"><br>
+<div class="blink">
+<div id="back"><font size="6">
+<b>
+  <span class="one">[✓] REST</span><span class="two"> APIs ANNKLIN [✓]</span>
+  </b>
+</font>
+</div>
+</div>
+<br>
+<a id="one" href="/welcome">Recursos</a>
+<script type="text/javascript">
+Sayings = "";
+			var now = new Date();
+			var hours = now.getHours();
+			if (hours >= 16 && hours <= 17){
+			Sayings += "<span class='text-success'>Divirta-se com nossos recursos</span>"
+			} else if (hours >= 18 || hours <= 2){
+			Sayings += "<span class='text-success'>Boa noite</span>"
+			} else if (hours >= 3 && hours <= 10){
+			Sayings += "<span class='text-success'>Bom Diaa</span>"
+			} else if (hours >= 11 && hours <= 14){
+			Sayings += "<span class='text-success'>Boa tarde</span>"
+			} else if (hours >= 13 && hours <= 15){
+			Sayings += "<span class='text-success'>Boa tarde</span>"
+			}
+document.getElementById("sayings").innerHTML = Sayings
+
+
+swal('Olá', 'Bem Vindo ao nosso site de TESTE APIs', 'warning')
+window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+    </script>
+	
+    <b><h2 id="one"><marquee width="70%">Se leu o cu é meu :)</marquee></h2></b>
+	
+   </body>
+</td>
+</table>
+</html>
